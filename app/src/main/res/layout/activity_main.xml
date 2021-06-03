@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/webView"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivGoogle"
+            android:src="@drawable/google"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+
+        <ImageView
+            android:id="@+id/ivFacebook"
+            android:src="@drawable/fb"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
